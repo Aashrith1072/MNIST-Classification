@@ -15,6 +15,26 @@ The notebook demonstrates an end-to-end ML workflow:
 
 ---
 
+## Assignment Question
+
+### Q2. Use MNIST Dataset
+
+### (a) Multi-Class Classification
+Use the above classifiers to perform multi-class classification where the goal is to classify each image into one of the ten digits:
+
+**0, 1, 2, 3, 4, 5, 6, 7, 8, 9**
+
+### (b) Exploration of Different Evaluation Metrics
+Evaluate all models using different evaluation metrics.
+
+### (c) Parameter Tuning through Grid Search / Cross Validation
+Tune model parameters using two powerful techniques:
+
+- Grid Search
+- Cross Validation
+
+---
+
 ## Dataset Information
 
 The MNIST dataset contains grayscale images of handwritten digits.
@@ -41,9 +61,7 @@ Each image is represented as pixel intensity values ranging from 0 to 255.
 
 ---
 
-## Machine Learning Models Used
-
-This project may include the following classifiers:
+## Classifiers Used
 
 - Logistic Regression
 - K-Nearest Neighbors (KNN)
@@ -62,23 +80,25 @@ The raw IDX files are loaded manually using Python's `struct` module.
 
 ### 2. Data Preprocessing
 - Reshaping images
-- Train/Test split
-- Feature scaling / normalization
+- Normalization
+- Feature scaling
 - Label preparation
 
 ### 3. Exploratory Data Analysis
 - Class distribution
-- Sample digit images
-- Pixel statistics
+- Sample digit visualization
+- Pixel analysis
 
 ### 4. Model Training
-Different ML models are trained on the dataset.
+Train multiple classifiers on the MNIST dataset.
 
 ### 5. Hyperparameter Tuning
-GridSearchCV / Parameter tuning is used to improve performance.
+Use:
+- GridSearchCV
+- Cross Validation
 
 ### 6. Evaluation Metrics
-Models are compared using:
+Models are evaluated using:
 
 - Accuracy Score
 - Precision
@@ -92,13 +112,14 @@ Models are compared using:
 
 ## Results
 
-The best-performing model is selected based on evaluation metrics and test accuracy.
+The best-performing classifier is selected based on test accuracy and overall evaluation metrics.
 
 ---
 
 ## How to Run
 
 ### Clone Repository
+
 ```bash
 git clone https://github.com/your-username/MNIST-Classification.git
 cd MNIST-Classification
